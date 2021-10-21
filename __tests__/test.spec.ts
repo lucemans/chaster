@@ -1,3 +1,0 @@
-it('Basic Test', () => {
-    expect('');
-});
