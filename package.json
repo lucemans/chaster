@@ -29,5 +29,8 @@
     "preversion": "yarn lint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
   }
 }

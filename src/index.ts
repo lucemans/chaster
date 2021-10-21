@@ -1,0 +1,1 @@
+console.log('If youre reading this, Lock it. Now!');
