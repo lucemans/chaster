@@ -1,0 +1,33 @@
+{
+  "name": "chaster",
+  "version": "0.0.1",
+  "description": "API to Interface with the Chaster application",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucemans/chaster.git"
+  },
+  "author": "Lucemans <luc@lucemans.nl>",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "chaster",
+    "chastikey",
+    "chastity",
+    "lock",
+    "keyholding"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  }
+}
